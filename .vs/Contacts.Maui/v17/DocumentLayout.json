@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Mobile_Dev\\Contacts.Maui\\",
+  "WorkspaceRootPath": "F:\\C_Sharp\\.NET MAUI\\net_maui\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|d:\\mobile_dev\\contacts.maui\\contacts.maui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|d:\\mobile_dev\\contacts.maui\\contacts.maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\note.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\note.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 309,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -30,32 +34,45 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\Mobile_Dev\\Contacts.Maui\\Contacts.Maui\\MainPage.xaml",
-              "RelativeDocumentMoniker": "Contacts.Maui\\MainPage.xaml",
-              "ToolTip": "D:\\Mobile_Dev\\Contacts.Maui\\Contacts.Maui\\MainPage.xaml",
-              "RelativeToolTip": "Contacts.Maui\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-13T03:20:39.137Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "D:\\Mobile_Dev\\Contacts.Maui\\Contacts.Maui\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "Contacts.Maui\\MainPage.xaml.cs",
-              "ToolTip": "D:\\Mobile_Dev\\Contacts.Maui\\Contacts.Maui\\MainPage.xaml.cs",
-              "RelativeToolTip": "Contacts.Maui\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAMAAAA",
+              "Title": "Note.md",
+              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Note.md",
+              "RelativeDocumentMoniker": "Contacts.Maui\\Note.md",
+              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Note.md",
+              "RelativeToolTip": "Contacts.Maui\\Note.md",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAKgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-03-17T15:41:35.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "Contacts.Maui\\AppShell.xaml.cs",
+              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml.cs",
+              "RelativeToolTip": "Contacts.Maui\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T02:50:04.048Z",
+              "WhenOpened": "2025-03-17T15:32:32.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Contacts.Maui\\AppShell.xaml",
+              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml",
+              "RelativeToolTip": "Contacts.Maui\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-17T15:31:13.583Z",
               "EditorCaption": ""
             }
           ]

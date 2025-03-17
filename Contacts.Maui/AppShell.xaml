@@ -4,13 +4,30 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Contacts.Maui"
+    xmlns:views="clr-namespace:Contacts.Maui.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="Contacts.Maui">
 
-    <!--Điều hướng về MainPage.xaml--> 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" /> 
 
+    <FlyoutItem FlyoutDisplayOptions="AsSingleItem">
+    <!--Điều hướng về MainPage.xaml--> 
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" /> 
+        
+        <Tab Title="Contacts" Route="Contacts">
+            <ShellContent Title="Contacts" ContentTemplate="{DataTemplate views:ContactsPage}" Route="ContactsPage">
+                
+            </ShellContent>
+
+            <ShellContent Title="Add contact" ContentTemplate="{DataTemplate views:AddContactPage}" Route="AddContactPage">
+                
+            </ShellContent>
+
+            <ShellContent Title="Edit contact" ContentTemplate="{DataTemplate views:EditContactPage}" Route="EditContactPage">
+
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
 </Shell>
