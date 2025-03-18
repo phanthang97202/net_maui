@@ -3,10 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Contacts.Maui.Views.ContactsPage"
              Title="Contacts">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        
+        <VerticalStackLayout Margin="10" Spacing="10">
+            <Label 
+                Text="List contact page"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="AddContactBtn"
+                Text="Add contact" 
+                Clicked="handleAddContact"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="EditContactBtn"
+                Text="Edit contact" 
+                Clicked="handleEditContact"
+                HorizontalOptions="Fill" />
+
+            <CollectionView ItemsSource="{Binding People}">
+                <CollectionView.Header>
+                    <Grid ColumnDefinitions="*,*,*" Padding="10">
+                        <Label Text="Tên" FontAttributes="Bold" Grid.Column="0"/>
+                        <Label Text="Tuổi" FontAttributes="Bold" Grid.Column="1"/>
+                        <Label Text="Địa chỉ" FontAttributes="Bold" Grid.Column="2"/>
+                    </Grid>
+                </CollectionView.Header>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="*,*,*" Padding="10">
+                            <Label Text="{Binding Name}" Grid.Column="0"/>
+                            <Label Text="{Binding Age}" Grid.Column="1"/>
+                            <Label Text="{Binding Address}" Grid.Column="2"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+
+        
+    </ScrollView>
+
 </ContentPage>

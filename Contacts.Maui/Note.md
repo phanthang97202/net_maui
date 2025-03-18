@@ -167,3 +167,118 @@ constructor để khởi tạo giao diện UI từ file .xaml tương ứng củ
 	+ Dispatcher 
 		Trong MAUI là 1 cơ chế giúp thực thi mã trên luồng UI chính (Main thread)
 		Trong MAUI các thao tác UI như cập nhật giao diện, điều hướng, ... chỉ có thể thực hiện trên luồng UI chính - main thread. Nếu cố tình gọi hàm cập nhật UI từ 1 luồng nền - background thread => ứng dụng có thể bị lỗi
+	
+	+ Routing 
+		Trong điều hướng NET MAUI có vai trò ánh xạ các route(đường dẫn) đến các page trong ứng dụng, giúp bạn điều hướng bằng cách sử dụng đường dẫn thay vì trực tiếp gọi đến lớp
+		Tách biệt logic UI và logic điều hướng
+		Hỗ trợ tham số trong điều hướng như khi sử dụng URL
+		+ RegisterRoute 
+			Dùng để đăng ký 1 route tùy chỉnh cho điều hướng (navigation)
+			Tạo đường dẫn route cho 1 trang
+			Cho phép sử dụng Shell.Current.GoToAsync() để điều hướng đến trang đó
+			Hữu ishc khi trang không phải làm ShellContent, FlyoutItem, or Tab
+
+			Chú ý:
+				🔹 Bạn không cần RegisterRoute() nếu đã có <ShellContent Route="..." />.
+				🔹 Chỉ dùng RegisterRoute() cho trang con hoặc không nằm trong Shell. 🚀
+					Ex: navigate đến chi tiết của contact
+						- AppShell.xaml
+							<Shell
+								x:Class="Contacts.Maui.AppShell"
+								xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+								xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+								xmlns:views="clr-namespace:Contacts.Maui.Views"
+								Shell.FlyoutBehavior="Disabled"
+								Title="Contacts.Maui">
+
+								<FlyoutItem Title="Home">
+									<ShellContent Title="Main" ContentTemplate="{DataTemplate views:MainPage}" Route="MainPage"/>
+									<ShellContent Title="Contacts" ContentTemplate="{DataTemplate views:ContactsPage}" Route="ContactsPage"/>
+								</FlyoutItem>
+							</Shell>
+							* Không có ContactDetailPage trong ShellContent vì nó là trang con*
+						- AppShell.xaml.cs
+							public partial class AppShell : Shell
+							{
+								public AppShell()
+								{
+									InitializeComponent();
+
+									// Đăng ký route cho trang con
+									Routing.RegisterRoute("ContactDetail", typeof(ContactDetailPage));
+								}
+							}
+							* Do ContactDetailPage không được khai báo trong ShellContent nên phải đăng ký thủ công*
+						- ContactsPage.xaml.cs
+							private async void OnContactSelected(object sender, EventArgs e)
+							{
+								var contactId = "123"; // Giả sử đây là ID của liên hệ
+								await Shell.Current.GoToAsync($"ContactDetail?id={contactId}");
+							}
+							* GoToAsync("ContactDetail") sẽ hoạt động vì đã RegisterRoute("ContactDetail").*
+						- ContactDetailPage.xaml.cs 
+							protected override void OnNavigatedTo(NavigatedToEventArgs args)
+							{
+								base.OnNavigatedTo(args);
+    
+								if (Shell.Current?.CurrentState?.Location is Uri uri)
+								{
+									var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+									string contactId = query["id"];
+									Console.WriteLine($"Contact ID: {contactId}");
+								}
+							}
+							*Trang ContactDetailPage lấy được id từ URL.*
+
+	+ Table
+		Ex: 
+			List.xaml
+				<CollectionView ItemsSource="{Binding People}">
+					<CollectionView.Header>
+						<Grid ColumnDefinitions="*,*,*" Padding="10">
+							<Label Text="Tên" FontAttributes="Bold" Grid.Column="0"/>
+							<Label Text="Tuổi" FontAttributes="Bold" Grid.Column="1"/>
+							<Label Text="Địa chỉ" FontAttributes="Bold" Grid.Column="2"/>
+						</Grid>
+					</CollectionView.Header>
+    
+					<CollectionView.ItemTemplate>
+						<DataTemplate>
+							<Grid ColumnDefinitions="*,*,*" Padding="10">
+								<Label Text="{Binding Name}" Grid.Column="0"/>
+								<Label Text="{Binding Age}" Grid.Column="1"/>
+								<Label Text="{Binding Address}" Grid.Column="2"/>
+							</Grid>
+						</DataTemplate>
+					</CollectionView.ItemTemplate>
+				</CollectionView>
+			List.xaml.cs
+				public class Person
+				{
+					public string? Name { get; set; }
+					public int Age { get; set; }
+					public string? Address { get; set; }
+				}
+
+				public class MainViewModel
+				{
+					public ObservableCollection<Person> People { get; set; }
+					public MainViewModel()
+					{
+						People = new ObservableCollection<Person>
+						{
+							new Person { Name = "A", Age = 12, Address = "Hà Nam" },
+							new Person { Name = "A", Age = 12, Address = "Hà Nam" },
+							new Person { Name = "A", Age = 12, Address = "Hà Nam" }
+						};
+					}
+				}
+				
+				public ContactsPage()
+				{
+					InitializeComponent();
+					BindingContext = new MainViewModel();
+				}
+
+				+ ObservableCollection<T>
+					GIúp tự động cập nhật UI, thông báo cho UI khi: update, add, remove phần tử

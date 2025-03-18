@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "F:\\C_Sharp\\.NET MAUI\\net_maui\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\views\\contactspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\views\\contactspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\note.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\note.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\views\\contactspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\views\\contactspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|f:\\c_sharp\\.net maui\\net_maui\\contacts.maui\\views\\editcontactpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A32F1FBE-00A5-413A-B4AA-99A5F98B9F76}|Contacts.Maui\\Contacts.Maui.csproj|solutionrelative:contacts.maui\\views\\editcontactpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,40 +39,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Note.md",
-              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Note.md",
-              "RelativeDocumentMoniker": "Contacts.Maui\\Note.md",
-              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Note.md",
-              "RelativeToolTip": "Contacts.Maui\\Note.md",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAAKgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-03-17T15:41:35.499Z",
+              "Title": "ContactsPage.xaml",
+              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Views\\ContactsPage.xaml",
+              "RelativeDocumentMoniker": "Contacts.Maui\\Views\\ContactsPage.xaml",
+              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Views\\ContactsPage.xaml",
+              "RelativeToolTip": "Contacts.Maui\\Views\\ContactsPage.xaml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T14:48:56.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "Contacts.Maui\\AppShell.xaml.cs",
-              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml.cs",
-              "RelativeToolTip": "Contacts.Maui\\AppShell.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Title": "ContactsPage.xaml.cs",
+              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Views\\ContactsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Contacts.Maui\\Views\\ContactsPage.xaml.cs",
+              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Views\\ContactsPage.xaml.cs",
+              "RelativeToolTip": "Contacts.Maui\\Views\\ContactsPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:32:32.303Z",
+              "WhenOpened": "2025-03-18T14:37:03.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml",
-              "RelativeDocumentMoniker": "Contacts.Maui\\AppShell.xaml",
-              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\AppShell.xaml",
-              "RelativeToolTip": "Contacts.Maui\\AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-17T15:31:13.583Z",
+              "Title": "EditContactPage.xaml.cs",
+              "DocumentMoniker": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Views\\EditContactPage.xaml.cs",
+              "RelativeDocumentMoniker": "Contacts.Maui\\Views\\EditContactPage.xaml.cs",
+              "ToolTip": "F:\\C_Sharp\\.NET MAUI\\net_maui\\Contacts.Maui\\Views\\EditContactPage.xaml.cs",
+              "RelativeToolTip": "Contacts.Maui\\Views\\EditContactPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T03:10:48.2Z",
               "EditorCaption": ""
             }
           ]

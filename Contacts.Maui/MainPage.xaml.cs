@@ -34,17 +34,7 @@ namespace Contacts.Maui
         {
             string value = CounterBtn.Text;
             await Application.Current.MainPage.DisplayAlert("Thông báo", value, "OK");
-        }
-
-        private void handleAddContact(object sender, EventArgs e)
-        {
-             
-        }
-        
-        private void handleListContact(object sender, EventArgs e)
-        {
-
-        }
+        } 
     }
 
 }
