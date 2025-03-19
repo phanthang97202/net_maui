@@ -1,46 +1,69 @@
+Ôªøusing Contacts.Maui.ApiServices;
 using System.Collections.ObjectModel;
 
 namespace Contacts.Maui.Views;
 
-public class Person
+public class ContractModel
 {
-    public string? Name { get; set; }
+    public string Name { get; set; }
     public int Age { get; set; }
-    public string? Address { get; set; }
+    public string Address { get; set; }
+    public string Image { get; set; }
 }
 
 public class MainViewModel
 {
-    public ObservableCollection<Person> People { get; set; }
+    public ObservableCollection<ContractModel> ContractsData { get; set; }
+    
+
     public MainViewModel()
     {
-        People = new ObservableCollection<Person>
+        ContractsData = new ObservableCollection<ContractModel>
         {
-            new Person { Name = "AAAAAAAAAAAAAAAA", Age = 12, Address = "H‡ Nam" },
-            new Person { Name = "A", Age = 12, Address = "H‡ Nam" },
-            new Person { Name = "A", Age = 12, Address = "H‡ Nam" }
-        };
-    }
+            new ContractModel { Name = "PhanThang", Age = 12, Address = "H√† Nam", Image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZy0ne9AUimS-ll7GXO_QDkrqj20PMG-kyw&s" },
+            new ContractModel { Name = "Van Dong", Age = 12, Address = "B·∫Øc Giang", Image = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e6724e80-59f2-45bb-88ad-dec3d19edb03/dhu6sma-d26e9d84-5997-40f4-a485-5d7a382bdfd7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U2NzI0ZTgwLTU5ZjItNDViYi04OGFkLWRlYzNkMTllZGIwM1wvZGh1NnNtYS1kMjZlOWQ4NC01OTk3LTQwZjQtYTQ4NS01ZDdhMzgyYmRmZDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mRuA1vEsdogTArkcn689-PLMgmDDz9lCM-PV3FNu6E0" },
+        }; 
+    } 
 }
 
 public partial class ContactsPage : ContentPage
 {
-	public ContactsPage()
+    private readonly MstProvinceApiService _mstProvinceApiService;
+    public ContactsPage(MstProvinceApiService mstProvinceApiService)
 	{
-		InitializeComponent();
-        BindingContext = new MainViewModel();
 
+		InitializeComponent();
+        _mstProvinceApiService = mstProvinceApiService;
+
+        BindingContext = new MainViewModel();
     }
 
-    
-
-    private void handleAddContact(object sender, EventArgs e)
+    private async void handleAddContact(object sender, EventArgs e)
     {
-        Shell.Current.GoToAsync(nameof(AddContactPage));
+        var data = await _mstProvinceApiService.GetAllActive();
+        //await Shell.Current.GoToAsync(nameof(AddContactPage));
     }
 
     private void handleEditContact(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync(nameof(EditContactPage));
+    }
+
+    private void listViewContracts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        ContractModel val = new ContractModel();
+
+        
+        if(e.SelectedItem is not null)
+        {
+            val = e.SelectedItem as ContractModel;
+            DisplayAlert("Th√¥ng b√°o", val?.Name?.ToString(), "OK");
+        }
+
+    }
+
+    private void listViewContracts_ItemTapped(object sender, ItemTappedEventArgs e)
+    {
+        Console.WriteLine(e);
     }
 }

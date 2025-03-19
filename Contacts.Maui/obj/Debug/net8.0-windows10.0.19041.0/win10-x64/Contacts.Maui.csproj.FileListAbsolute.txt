@@ -354,3 +354,10 @@ F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\obj\Debug\net8.0-windows10.0.19041.0
 F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Binder.dll
+F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Diagnostics.dll
+F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Http.dll
+F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Diagnostics.DiagnosticSource.dll
+F:\C_Sharp\.NET MAUI\net_maui\Contacts.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
